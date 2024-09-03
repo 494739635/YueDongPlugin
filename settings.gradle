@@ -1,0 +1,28 @@
+pluginManagement {
+    repositories {
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        /*flatDir {
+            dirs '../sdk/libs'
+        }*/
+        google()
+        mavenCentral()
+        maven {
+            url codingArtifactsRepoUrl
+            credentials {
+                username = codingArtifactsGradleUsername
+                password = codingArtifactsGradlePassword
+            }
+        }
+    }
+}
+
+rootProject.name = "YueDongPlugin"
+include ':app'
+include ':plugin'

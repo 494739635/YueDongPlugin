@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="radius_texture_bg">12dp</dimen>
+    <dimen name="popwindow_margin">16dp</dimen>
+    <dimen name="popwindow_offset_y">100dp</dimen>
+
+</resources>

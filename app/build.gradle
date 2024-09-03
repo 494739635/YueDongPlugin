@@ -1,0 +1,45 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+}
+
+android {
+    namespace 'com.live.ss'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.live.ss"
+        minSdk 24
+        targetSdk 34
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+}
+
+dependencies {
+    implementation 'androidx.core:core-ktx:1.12.0'
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.11.0'
+    implementation project(":plugin")
+//    implementation 'com.sxq.sdk:unity-sdk:1.0.1'
+//    implementation 'com.sxq.sdk:alipaysdk-android:15.8.17'
+//    implementation 'com.sxq.sdk:quicklogin:3.3.8'
+//    implementation 'com.sxq.sdk:RangersAppLog-All-convert:6.15.4'
+//    implementation 'com.sxq.sdk:RangersAppLog-Lite-cn:6.15.4'
+}

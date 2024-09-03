@@ -1,0 +1,108 @@
+plugins {
+    id 'com.android.library'
+    id 'org.jetbrains.kotlin.android'
+}
+
+apply from: MAVEN_GRADLE
+
+android {
+    namespace 'com.yuedong.plugin'
+    compileSdk 34
+
+    defaultConfig {
+        minSdk 21
+        consumerProguardFiles "consumer-rules.pro"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    // 指定 AAR 输出目录
+    libraryVariants.all { variant ->
+        variant.outputs.all {
+            outputFileName = "yuedong_plugin.aar"
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    dexOptions {
+        incremental true
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+    buildFeatures {
+        viewBinding true
+    }
+}
+
+dependencies {
+    api fileTree(dir: 'libs', include: ['*.jar', '*.aar'])
+    api 'androidx.core:core-ktx:1.12.0'
+    api 'androidx.appcompat:appcompat:1.6.1'
+    api 'com.google.android.material:material:1.11.0'
+    api "com.squareup.okhttp3:okhttp:3.14.9"
+    api "com.getkeepsafe.relinker:relinker:1.4.4"
+    api 'androidx.legacy:legacy-support-v4:1.0.0'
+    api 'com.google.code.gson:gson:2.8.8'
+    api 'com.github.bumptech.glide:glide:4.12.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.12.0'
+}
+
+// 手动将支付宝 SDK AAR 文件复制到 libs 目录下，以便打包进输出的 AAR
+/*task copyAlipaySdk(type: Copy) {
+    def alipaySdkAarFile = file('libs/alipaysdk-android-15.8.17.aar')
+    if (!alipaySdkAarFile.exists()) {
+        // 如果文件不存在，则下载
+        exec {
+            commandLine 'bash', '-c', 'curl -o libs/alipaysdk-android-15.8.17.aar https://maven.aliyun.com/repository/public/com/alipay/sdk/alipaysdk-android/15.8.17/alipaysdk-android-15.8.17.aar'
+        }
+    }
+    from('libs')
+    into('libs')
+}
+
+// 手动将巨量 SDK AAR 文件复制到 libs 目录下，以便打包进输出的 AAR
+task copyBytedanceSdk(type: Copy) {
+    def bytedanceSdkLiteFile = file('libs/RangersAppLog-Lite-cn-6.15.4.aar')
+    def bytedanceSdkAllFile = file('libs/RangersAppLog-All-convert-6.15.4.aar')
+
+    // 检查文件是否已经存在，如果不存在，则进行下载
+    if (!bytedanceSdkLiteFile.exists()) {
+        exec {
+            commandLine 'bash', '-c', 'curl -o libs/RangersAppLog-Lite-cn-6.15.4.aar https://artifact.bytedance.com/repository/Volcengine/com/bytedance/applog/RangersAppLog-Lite-cn/6.15.4/RangersAppLog-Lite-cn-6.15.4.aar'
+        }
+    }
+    if (!bytedanceSdkAllFile.exists()) {
+        exec {
+            commandLine 'bash', '-c', 'curl -o libs/RangersAppLog-All-convert-6.15.4.aar https://artifact.bytedance.com/repository/Volcengine/com/bytedance/applog/RangersAppLog-All-convert/6.15.4/RangersAppLog-All-convert-6.15.4.aar'
+        }
+    }
+    // 将文件复制到 libs 目录下
+    from('libs')
+    into('libs')
+}
+
+// 手动将网易易盾 SDK AAR 文件复制到 libs 目录下，以便打包进输出的 AAR
+task copyYidunSdk(type: Copy) {
+    def yidunSdkFile = file('libs/quicklogin-3.3.8.aar')
+
+    // 检查文件是否已经存在，如果不存在，则进行下载
+    if (!yidunSdkFile.exists()) {
+        exec {
+            commandLine 'bash', '-c', 'curl -o libs/quicklogin-3.3.8.aar https://repo1.maven.org/maven2/io/github/yidun/quicklogin/3.3.8/quicklogin-3.3.8.aar'
+        }
+    }
+
+    // 将文件复制到 libs 目录下
+    from('libs')
+    into('libs')
+}*/
