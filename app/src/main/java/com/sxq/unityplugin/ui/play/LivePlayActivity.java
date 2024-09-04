@@ -11,24 +11,24 @@ import androidx.annotation.Nullable;
 
 import com.live.ss.R;
 import com.sxq.unityplugin.base.MLVBBaseActivity;
-import com.yuedong.plugin.util.URLUtils;
 import com.tencent.live2.V2TXLiveDef;
 import com.tencent.live2.V2TXLivePlayer;
 import com.tencent.live2.V2TXLivePlayerObserver;
 import com.tencent.live2.impl.V2TXLivePlayerImpl;
 import com.tencent.rtmp.ui.TXCloudVideoView;
+import com.yuedong.plugin.util.URLUtils;
 
 import java.util.Random;
 
 /**
  * Playback View
  * Features:
- * - Start playback {@link LebPlayActivity#startPlay()}
- * - Mute {@link LebPlayActivity#mute()}
- * For more information, please see the integration document {https://cloud.tencent.com/document/product/454/68195}.
+ * - Start playback {@link LivePlayActivity#startPlay()}
+ * - Mute {@link LivePlayActivity#mute()}
+ * For more information, please see the integration document {https://cloud.tencent.com/document/product/454/56598}.
  */
-public class LebPlayActivity extends MLVBBaseActivity implements View.OnClickListener {
-    private static final String TAG = "LebPlayActivity";
+public class LivePlayActivity extends MLVBBaseActivity implements View.OnClickListener {
+    private static final String TAG = "LivePlayActivity";
 
     private TXCloudVideoView mPlayRenderView;
     private V2TXLivePlayer   mLivePlayer;
@@ -37,14 +37,15 @@ public class LebPlayActivity extends MLVBBaseActivity implements View.OnClickLis
     private TextView         mTextTitle;
 
     private String  mStreamId;
+    private int     mStreamType    = 3;    //0:RTMP  1：FLV 2:HLS 3:RTC
     private boolean mPlayAudioFlag = true;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.lebplay_activity_leb_play);
+        setContentView(R.layout.liveplay_activity_live_play);
+        initIntentData();
         if (checkPermission()) {
-            initIntentData();
             initView();
             startPlay();
         }
@@ -58,6 +59,7 @@ public class LebPlayActivity extends MLVBBaseActivity implements View.OnClickLis
 
     private void initIntentData() {
         mStreamId = getIntent().getStringExtra("STREAM_ID");
+        mStreamType = getIntent().getIntExtra("STREAM_TYPE", 0);
     }
 
 
@@ -74,7 +76,7 @@ public class LebPlayActivity extends MLVBBaseActivity implements View.OnClickLis
     }
 
     private void startPlay() {
-        mLivePlayer = new V2TXLivePlayerImpl(LebPlayActivity.this);
+        mLivePlayer = new V2TXLivePlayerImpl(LivePlayActivity.this);
         mLivePlayer.setRenderView(mPlayRenderView);
         mLivePlayer.setObserver(new V2TXLivePlayerObserver() {
 
@@ -115,7 +117,7 @@ public class LebPlayActivity extends MLVBBaseActivity implements View.OnClickLis
         });
 
         String userId = String.valueOf(new Random().nextInt(10000));
-        String playURL = URLUtils.generatePlayUrl(mStreamId, userId, 4);
+        String playURL = URLUtils.generatePlayUrl(mStreamId, userId, mStreamType);
         int result = mLivePlayer.startLivePlay(playURL);
         if (result == 0) {
             mPlayFlag = true;
@@ -149,11 +151,11 @@ public class LebPlayActivity extends MLVBBaseActivity implements View.OnClickLis
             if (mPlayAudioFlag) {
                 mLivePlayer.pauseAudio();
                 mPlayAudioFlag = false;
-                mButtonMute.setText(R.string.lebplay_cancel_mute);
+                mButtonMute.setText(R.string.liveplay_cancel_mute);
             } else {
                 mLivePlayer.resumeAudio();
                 mPlayAudioFlag = true;
-                mButtonMute.setText(R.string.lebplay_mute);
+                mButtonMute.setText(R.string.liveplay_mute);
             }
         }
     }

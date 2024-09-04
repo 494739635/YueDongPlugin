@@ -1,4 +1,4 @@
-package com.sxq.unityplugin.util;
+package com.yuedong.plugin.util;
 
 
 import android.util.Base64;

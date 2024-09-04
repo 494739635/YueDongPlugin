@@ -16,7 +16,7 @@ import androidx.appcompat.widget.PopupMenu;
 
 import com.live.ss.R;
 import com.sxq.unityplugin.base.MLVBBaseActivity;
-import com.sxq.unityplugin.util.URLUtils;
+import com.yuedong.plugin.util.URLUtils;
 import com.tencent.live2.V2TXLiveDef;
 import com.tencent.live2.V2TXLivePusher;
 import com.tencent.live2.impl.V2TXLivePusherImpl;

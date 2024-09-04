@@ -22,6 +22,17 @@
     <string name="app_time_shift">直播时移</string>
     <string name="common_please_input_roomid_and_userid">用户没有允许需要的权限，加入通话失败</string>
 
+    <string name="liveplay_mute">静音</string>
+    <string name="liveplay_mlvb_live_play">MLVB 直播拉流</string>
+    <string name="liveplay_please_input_streamid">请输入streamId</string>
+    <string name="liveplay_live_play_desc">RTC拉流为腾讯云自研实时音视频协议，超低延迟、抗弱网能力强，全球覆盖适用于电商秒杀，体育赛事等多个场景，更多细节详见：https://cloud.tencent.com/document/product/454/56598 目前仅仅中国大陆支持，其他地区正持续开发中。\n\n标准直播拉流支持FLV、RTMP、HLS等多种格式，成熟度高，并 发量强，但是延迟高</string>
+    <string name="liveplay_rtc_play">RTC拉流</string>
+    <string name="liveplay_rtmp_play">RTMP拉流</string>
+    <string name="liveplay_webrtc_play">快直播拉流(推荐)</string>
+    <string name="liveplay_cancel_mute">取消静音</string>
+    <string name="liveplay_flv_play">FLV拉流</string>
+    <string name="liveplay_hls_play">HLS拉流</string>
+
     <string name="lebplay_mute">静音</string>
     <string name="lebplay_cancel_mute">取消静音</string>
     <string name="lebplay_mlvb_live_play">MLVB 快直播拉流</string>

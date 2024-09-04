@@ -25,6 +25,7 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
+        android:name="com.sxq.unityplugin.LiveApplication"
         android:theme="@style/Theme.UnityPlugin"
         tools:replace="android:allowBackup"
         tools:targetApi="31" >
@@ -52,6 +53,16 @@
 
         <activity
             android:name="com.sxq.unityplugin.ui.play.LebPlayEnterActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+
+        <activity
+            android:name="com.sxq.unityplugin.ui.play.LivePlayActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+
+        <activity
+            android:name="com.sxq.unityplugin.ui.play.LivePlayEnterActivity"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
 
