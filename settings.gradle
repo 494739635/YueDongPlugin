@@ -8,8 +8,8 @@ pluginManagement {
 dependencyResolutionManagement {
     repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
     repositories {
-        /*flatDir {
-            dirs '../sdk/libs'
+       /* flatDir {
+            dirs '../plugin/libs'
         }*/
         google()
         mavenCentral()

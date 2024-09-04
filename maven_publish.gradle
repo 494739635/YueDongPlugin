@@ -8,7 +8,7 @@ afterEvaluate{
             myPublication(MavenPublication) {
                 afterEvaluate { artifact(tasks.getByName("bundleReleaseAar")) }
                 groupId 'com.yuedong.plugin'
-                artifactId 'yuedong-plugin'
+                artifactId 'beatuy-plugin'
                 version '1.0.0'             // Your package version
                 //artifact publishArtifact    //Example: *./target/myJavaClasses.jar*
 //                artifact "build/outputs/aar/sdk-release.aar"//aar包的目录
