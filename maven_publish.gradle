@@ -9,7 +9,7 @@ afterEvaluate{
                 afterEvaluate { artifact(tasks.getByName("bundleReleaseAar")) }
                 groupId 'com.yuedong.plugin'
                 artifactId 'beatuy-plugin'
-                version '0.0.1'             // Your package version
+                version '0.0.2'             // Your package version
                 //artifact publishArtifact    //Example: *./target/myJavaClasses.jar*
 //                artifact "build/outputs/aar/sdk-release.aar"//aar包的目录
 

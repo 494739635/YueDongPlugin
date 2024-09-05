@@ -3,7 +3,8 @@ plugins {
     id 'org.jetbrains.kotlin.android'
 }
 
-apply from: MAVEN_GRADLE
+//apply from: MAVEN_GRADLE
+apply plugin: 'maven-publish'
 
 android {
     namespace 'com.yuedong.plugin'
@@ -61,4 +62,18 @@ dependencies {
     api 'com.yuedong.plugin:beautysdk:3.7.5'
     api 'com.tencent.liteav:LiteAVSDK_Professional:latest.release'
     annotationProcessor 'com.github.bumptech.glide:compiler:4.12.0'
+}
+
+
+publishing {
+    publications {
+        release(MavenPublication) {
+            groupId = 'com.yuedong.plugin' // GitHub用户名
+            artifactId = 'beatuy-plugin' // 仓库名
+            version = '0.0.2' // 版本号
+
+            // 指定要发布的 AAR 文件
+            artifact("$buildDir/outputs/aar/${project.getName()}-release.aar")
+        }
+    }
 }
