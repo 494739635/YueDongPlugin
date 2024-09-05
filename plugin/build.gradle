@@ -1,11 +1,10 @@
 plugins {
     id 'com.android.library'
     id 'org.jetbrains.kotlin.android'
+    id 'maven-publish'
 }
 
 //apply from: MAVEN_GRADLE
-apply plugin: 'maven-publish'
-
 android {
     namespace 'com.yuedong.plugin'
     compileSdk 34
@@ -75,5 +74,10 @@ publishing {
             // 指定要发布的 AAR 文件
             artifact("$buildDir/outputs/aar/${project.getName()}-release.aar")
         }
+    }
+
+    repositories {
+        mavenLocal() // 启用本地 Maven 仓库
+        // 如果需要发布到其他仓库，添加相应的仓库配置
     }
 }
