@@ -1,18 +1,15 @@
 plugins {
-    id 'kotlin-android-extensions'
     id 'com.android.library'
     id 'kotlin-android'
-    id 'kotlin-kapt'
     id 'maven-publish'
 }
 
-//apply from: MAVEN_GRADLE
 android {
-    compileSdkVersion 30
-    buildToolsVersion "30.0.3"
+    compileSdk 30
 
     defaultConfig {
-        minSdkVersion 21
+        minSdk 21
+        targetSdk 30
         consumerProguardFiles "consumer-rules.pro"
         ndk {
             abiFilters "armeabi-v7a", "arm64-v8a"
@@ -61,6 +58,7 @@ dependencies {
     api 'com.google.code.gson:gson:2.8.8'
     api 'com.github.bumptech.glide:glide:4.12.0'
 //    api 'com.yuedong.plugin:beautysdk:3.7.5'
+//    implementation 'com.github.494739635:YueDongPlugin:git_hub-37e83ddbb7-1'
     api 'com.tencent.liteav:LiteAVSDK_Professional:latest.release'
     annotationProcessor 'com.github.bumptech.glide:compiler:4.12.0'
 }
@@ -69,8 +67,8 @@ dependencies {
 publishing {
     publications {
         release(MavenPublication) {
-            groupId = 'com.yuedong.plugin' // GitHub用户名
-            artifactId = 'beatuy-plugin' // 仓库名
+            groupId = '494739635' // GitHub用户名
+            artifactId = 'YueDongPlugin' // 仓库名
             version = '0.0.2' // 版本号
 
             // 指定要发布的 AAR 文件

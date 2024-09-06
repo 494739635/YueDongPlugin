@@ -1,5 +1,4 @@
 buildscript {
-    ext.kotlin_version = "1.4.32"
     // 导入通用的 Maven 库配置
     apply from : 'maven.gradle'
     repositories {
@@ -9,8 +8,8 @@ buildscript {
     }
 
     dependencies {
-        classpath 'com.android.tools.build:gradle:4.1.2'
-        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+        classpath 'com.android.tools.build:gradle:7.0.0'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.5.20"
     }
 }
 
