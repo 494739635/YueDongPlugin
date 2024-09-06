@@ -1,4 +1,4 @@
-pluginManagement {
+/*pluginManagement {
     repositories {
         google()
         mavenCentral()
@@ -8,9 +8,9 @@ pluginManagement {
 dependencyResolutionManagement {
     repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
     repositories {
-       /* flatDir {
+       *//* flatDir {
             dirs '../plugin/libs'
-        }*/
+        }*//*
         google()
         mavenCentral()
         maven {
@@ -21,7 +21,7 @@ dependencyResolutionManagement {
             }
         }
     }
-}
+}*/
 
 rootProject.name = "YueDongPlugin"
 include ':app'
