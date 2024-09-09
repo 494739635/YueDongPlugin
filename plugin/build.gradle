@@ -25,8 +25,8 @@ android {
 
     // 指定 AAR 输出目录
     libraryVariants.all { variant ->
-        variant.outputs.all {
-            outputFileName = "yuedong_plugin.aar"
+        variant.outputs.configureEach { output ->
+            output.outputFileName = "yuedong_plugin.aar"
         }
     }
 
@@ -35,12 +35,10 @@ android {
         targetCompatibility JavaVersion.VERSION_1_8
     }
 
-//    dexOptions {
-//        incremental true
-//    }
     kotlinOptions {
         jvmTarget = '1.8'
     }
+
     buildFeatures {
         viewBinding true
     }
@@ -62,17 +60,13 @@ dependencies {
     annotationProcessor 'com.github.bumptech.glide:compiler:4.9.0'
 }
 
-afterEvaluate {
-    publishing {
-        publications {
-            create('release', MavenPublication) {
-                from components.findByName('release')
-                groupId = 'com.github.494739635'
-                artifactId = 'YueDongPlugin'
-                version = '0.1.16'
-            }
+publishing {
+    publications {
+        release(MavenPublication) {
+            from components.findByName('release')
+            groupId = 'com.github.494739635'
+            artifactId = 'YueDongPlugin'
+            version = '0.1.16'
         }
     }
 }
-
-
