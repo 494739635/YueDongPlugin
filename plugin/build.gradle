@@ -66,16 +66,14 @@ dependencies {
 afterEvaluate {
     publishing {
         publications {
-            // Creates a Maven publication called "release".
-            release(MavenPublication) {
+            // 创建一个名为 "release" 的 Maven 发布。
+            create('release', MavenPublication) {
                 from components.release
-                //建议和github地址对应，否则对jitpack无效
                 groupId = 'com.github.494739635'
-                //建议和github仓库名称对应，否则对jitpack无效
                 artifactId = 'YueDongPlugin'
-                //建议和com.github.494739635release的tag相同，否则对jitpack无效
-                version = '0.1.15'
+                version = '0.1.16'
             }
         }
     }
 }
+
