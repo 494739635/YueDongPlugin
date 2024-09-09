@@ -62,13 +62,11 @@ dependencies {
     annotationProcessor 'com.github.bumptech.glide:compiler:4.9.0'
 }
 
-
 afterEvaluate {
     publishing {
         publications {
-            // 创建一个名为 "release" 的 Maven 发布。
             create('release', MavenPublication) {
-                from components.release
+                from components.findByName('release')
                 groupId = 'com.github.494739635'
                 artifactId = 'YueDongPlugin'
                 version = '0.1.16'
@@ -76,4 +74,5 @@ afterEvaluate {
         }
     }
 }
+
 
