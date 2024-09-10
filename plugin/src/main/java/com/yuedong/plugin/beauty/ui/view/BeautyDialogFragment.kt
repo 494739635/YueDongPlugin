@@ -6,10 +6,10 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.DialogFragment
 import androidx.fragment.app.Fragment
-import com.live.ss.databinding.FragmentPanelBinding
 import com.yuedong.plugin.beauty.ui.dLog
 import com.yuedong.plugin.beauty.ui.model.TabData
 import com.yuedong.plugin.beauty.ui.rootDir
+import com.yuedong.plugin.databinding.FragmentPanelBinding
 
 /**
  * 美颜窗口

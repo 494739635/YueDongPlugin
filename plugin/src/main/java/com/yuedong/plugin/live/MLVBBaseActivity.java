@@ -12,7 +12,7 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 
-import com.live.ss.R;
+import com.yuedong.plugin.R;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -12,8 +12,7 @@ import android.widget.TextView
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.DialogFragment
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.live.ss.R
-import com.live.ss.databinding.FragmentBeautyPanelBinding
+import com.yuedong.plugin.R
 import com.yuedong.plugin.beauty.logic.type.makeup_lip
 import com.yuedong.plugin.beauty.ui.view.EffectInitManager
 import com.yuedong.plugin.beauty.ui.view.Level1Manager
@@ -43,6 +42,7 @@ import com.yuedong.plugin.beauty.ui.model.TabId.Companion.makeupTabId
 import com.yuedong.plugin.beauty.ui.model.TabId.Companion.microTabId
 import com.yuedong.plugin.beauty.ui.model.TabId.Companion.oneKeyBeautyTabId
 import com.yuedong.plugin.beauty.ui.utils.getDataRange
+import com.yuedong.plugin.databinding.FragmentBeautyPanelBinding
 
 class BeautyPanelFragment : DialogFragment() {
     /**

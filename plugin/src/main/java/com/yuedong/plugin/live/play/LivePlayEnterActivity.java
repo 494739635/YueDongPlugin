@@ -14,7 +14,7 @@ import android.widget.Toast;
 
 import androidx.annotation.Nullable;
 
-import com.live.ss.R;
+import com.yuedong.plugin.R;
 import com.yuedong.plugin.live.MLVBBaseActivity;
 
 

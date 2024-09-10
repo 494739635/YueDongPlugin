@@ -20,7 +20,7 @@ import android.util.AttributeSet;
 import android.view.ViewGroup;
 import android.widget.RelativeLayout;
 
-import com.live.ss.R;
+import com.yuedong.plugin.R;
 
 
 /** {zh} 

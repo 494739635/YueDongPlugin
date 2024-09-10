@@ -4,7 +4,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.live.ss.R
+import com.yuedong.plugin.R
 import com.yuedong.plugin.beauty.ui.model.TabData
 import com.yuedong.plugin.beauty.ui.view.TextViewCanSelect
 

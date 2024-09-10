@@ -6,10 +6,10 @@ import android.os.Build
 import android.os.Bundle
 import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
-import com.live.ss.R
-import com.live.ss.databinding.ActivityBeautyPreviewBinding
+import com.yuedong.plugin.R
 import com.yuedong.plugin.beauty.camera.Accelerometer
 import com.yuedong.plugin.beauty.camera.CameraDisplay
+import com.yuedong.plugin.databinding.ActivityBeautyPreviewBinding
 
 class BeautyPreviewActivity : AppCompatActivity() {
 

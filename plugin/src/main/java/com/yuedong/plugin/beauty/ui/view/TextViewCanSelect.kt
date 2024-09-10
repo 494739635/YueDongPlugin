@@ -6,7 +6,7 @@ import android.graphics.Color
 import android.graphics.Paint
 import android.util.AttributeSet
 import androidx.core.content.ContextCompat
-import com.live.ss.R
+import com.yuedong.plugin.R
 import com.yuedong.plugin.beauty.ui.utils.toPX
 
 class TextViewCanSelect : androidx.appcompat.widget.AppCompatTextView {

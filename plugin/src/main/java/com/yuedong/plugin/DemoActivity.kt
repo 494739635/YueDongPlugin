@@ -5,7 +5,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import androidx.activity.ComponentActivity
-import com.live.ss.R
+import com.yuedong.plugin.R
 import com.tencent.live2.V2TXLiveDef.V2TXLiveLogConfig
 import com.tencent.live2.V2TXLivePremier
 import com.yuedong.plugin.beauty.BeautyPreviewActivity

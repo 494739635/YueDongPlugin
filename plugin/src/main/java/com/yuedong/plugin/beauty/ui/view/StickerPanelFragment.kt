@@ -8,10 +8,10 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.live.ss.databinding.FragmentStickerPanelBinding
 import com.yuedong.plugin.beauty.ui.model.RenderType
 import com.yuedong.plugin.beauty.ui.model.TabData
 import com.yuedong.plugin.beauty.ui.adapter.TabAdapter
+import com.yuedong.plugin.databinding.FragmentStickerPanelBinding
 
 class StickerPanelFragment : Fragment() {
 
