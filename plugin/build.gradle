@@ -6,7 +6,7 @@ plugins {
 
 android {
     compileSdk 33
-    namespace 'com.yuedong.plugin'
+
     defaultConfig {
         minSdk 21
         targetSdk 33
@@ -74,26 +74,8 @@ afterEvaluate {
                 //建议和github仓库名称对应，否则对jitpack无效
                 artifactId = 'YueDongPlugin'
                 //建议和com.github.494739635release的tag相同，否则对jitpack无效
-                version = '0.1.42'
+                version = '0.1.44'
             }
-        }
-
-        repositories {
-            mavenLocal()
         }
     }
 }
-
-//afterEvaluate {
-//    publishing {
-//        publications {
-//            // 创建一个名为 "release" 的 Maven 发布。
-//            create('release', MavenPublication) {
-//                from components.release
-//                groupId = 'com.github.494739635'
-//                artifactId = 'YueDongPlugin'
-//                version = '0.1.41'
-//            }
-//        }
-//    }
-//}
