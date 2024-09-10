@@ -1,6 +1,7 @@
 package com.yuedong.plugin
 
 import android.content.Context
+import android.content.Intent
 import android.widget.Toast
 import com.yuedong.plugin.beauty.ui.BeautyApiUI
 
@@ -19,6 +20,10 @@ object PluginManager {
 
     fun showToastForAndroid(context: Context) {
         Toast.makeText(context, "Hello UNI，来自Android的Toast", Toast.LENGTH_LONG).show()
+    }
+
+    fun startDemoActivity(context: Context) {
+        context.startActivity(Intent(context, DemoActivity::class.java))
     }
 
 }

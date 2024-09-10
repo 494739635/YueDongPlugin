@@ -48,6 +48,6 @@ dependencies {
     implementation 'androidx.appcompat:appcompat:1.0.0'
     implementation 'com.google.android.material:material:1.4.0'
     implementation project(":plugin")
-//    implementation 'com.github.494739635:YueDongPlugin:0.1.32'
+//    implementation 'com.github.494739635:YueDongPlugin:0.1.45'
 //    implementation 'com.yuedong.plugin:beatuy-plugin:0.0.1'
 }
