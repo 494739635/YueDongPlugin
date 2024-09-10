@@ -12,8 +12,8 @@ import android.widget.TextView
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.DialogFragment
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.yuedong.plugin.R
-import com.yuedong.plugin.databinding.FragmentBeautyPanelBinding
+import com.live.ss.R
+import com.live.ss.databinding.FragmentBeautyPanelBinding
 import com.yuedong.plugin.logic.type.makeup_lip
 import com.yuedong.plugin.ui.view.EffectInitManager
 import com.yuedong.plugin.ui.view.Level1Manager

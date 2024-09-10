@@ -6,7 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.DialogFragment
 import androidx.fragment.app.Fragment
-import com.yuedong.plugin.databinding.FragmentPanelBinding
+import com.live.ss.databinding.FragmentPanelBinding
 import com.yuedong.plugin.ui.dLog
 import com.yuedong.plugin.ui.model.TabData
 import com.yuedong.plugin.ui.rootDir

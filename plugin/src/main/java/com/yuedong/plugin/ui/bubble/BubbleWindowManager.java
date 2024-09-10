@@ -8,7 +8,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.RadioGroup;
 
-import com.yuedong.plugin.R;
+import com.live.ss.R;
 import com.yuedong.plugin.ui.bubble.bubble.BubblePopupWindow;
 import com.yuedong.plugin.ui.utils.DensityUtils;
 

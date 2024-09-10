@@ -6,16 +6,17 @@ import android.os.Build
 import android.os.Bundle
 import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
+import com.live.ss.R
+import com.live.ss.databinding.ActivityBeautyPreviewBinding
 import com.yuedong.plugin.camera.Accelerometer
 import com.yuedong.plugin.camera.CameraDisplay
-import com.yuedong.plugin.databinding.ActivityLivePreviewBinding
 import com.yuedong.plugin.ui.BeautyApiUI
 import com.yuedong.plugin.ui.bubble.BubbleWindowManager
 
-class LivePreviewActivity : AppCompatActivity() {
+class BeautyPreviewActivity : AppCompatActivity() {
 
     private val cameraRequestCode = 12300
-    lateinit var mainBinding: ActivityLivePreviewBinding
+    lateinit var mainBinding: ActivityBeautyPreviewBinding
     private var mBubbleWindowManager: BubbleWindowManager? = null
 
     //画面采集 未使用rtc采集时，通过cameraManager采集摄像头画面
@@ -27,7 +28,7 @@ class LivePreviewActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        mainBinding = ActivityLivePreviewBinding.inflate(layoutInflater)
+        mainBinding = ActivityBeautyPreviewBinding.inflate(layoutInflater)
         setContentView(mainBinding.root)
 
         initCamera()

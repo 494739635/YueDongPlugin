@@ -10,7 +10,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.bumptech.glide.RequestBuilder
 import com.bumptech.glide.load.resource.bitmap.RoundedCorners
-import com.yuedong.plugin.R
+import com.live.ss.R
 import com.yuedong.plugin.ui.model.TabData
 import com.yuedong.plugin.ui.rootDir
 import com.yuedong.plugin.ui.utils.toPX

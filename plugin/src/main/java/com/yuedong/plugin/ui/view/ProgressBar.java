@@ -11,7 +11,7 @@ import android.view.MotionEvent;
 import android.view.View;
 
 
-import com.yuedong.plugin.R;
+import com.live.ss.R;
 
 import androidx.annotation.Nullable;
 

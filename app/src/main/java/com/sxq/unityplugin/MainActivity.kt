@@ -9,7 +9,7 @@ import com.live.ss.R
 import com.sxq.unityplugin.ui.play.LebPlayEnterActivity
 import com.sxq.unityplugin.ui.play.LivePlayEnterActivity
 import com.sxq.unityplugin.ui.push.LivePushCameraEnterActivity
-import com.yuedong.plugin.LivePreviewActivity
+import com.yuedong.plugin.BeautyPreviewActivity
 
 class MainActivity : ComponentActivity() {
     @SuppressLint("MissingInflatedId")
@@ -34,7 +34,7 @@ class MainActivity : ComponentActivity() {
         }
 
         findViewById<View>(R.id.ll_leb_beauty).setOnClickListener {
-            val intent = Intent(this@MainActivity, LivePreviewActivity::class.java)
+            val intent = Intent(this@MainActivity, BeautyPreviewActivity::class.java)
             startActivity(intent)
         }
     }
