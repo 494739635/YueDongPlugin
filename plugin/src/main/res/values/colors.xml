@@ -6,7 +6,6 @@
     <color name="purple_700">#FF3700B3</color>
     <color name="teal_200">#FF03DAC5</color>
     <color name="teal_700">#FF018786</color>
-    <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 
     <color name="transparent">#00ffffff</color>
@@ -16,7 +15,6 @@
     <color name="texture_bg">#66000000</color>
     <color name="texture_selected">#33000000</color>
     <color name="beauty_bg">#11cccccc</color>
-    <color name="white">#ffffff</color>
     <color name="white_transparent">#66FFFFFF</color>
     <color name="color_fill_3">#99000000</color>
     <color name="common_bg_color">#1B1B1B</color>
