@@ -27,11 +27,6 @@
             android:screenOrientation="portrait" />
 
         <activity
-            android:name=".beauty.BeautyPreviewActivity"
-            android:screenOrientation="portrait"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
-
-        <activity
             android:name="com.yuedong.plugin.live.play.LebPlayActivity"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
