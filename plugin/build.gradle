@@ -88,7 +88,7 @@ afterEvaluate {
                 from components.release
                 groupId = 'com.github.494739635'
                 artifactId = 'YueDongPlugin'
-                version = '0.1.39'
+                version = '0.1.40'
             }
         }
     }
