@@ -10,5 +10,6 @@
     <color name="white">#ffffff</color>
     <color name="white_transparent">#66FFFFFF</color>
     <color name="color_fill_3">#99000000</color>
+    <color name="common_bg_color">#1B1B1B</color>
 
 </resources>

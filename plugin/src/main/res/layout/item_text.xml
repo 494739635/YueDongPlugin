@@ -6,7 +6,7 @@
     android:gravity="center"
     android:orientation="vertical">
 
-    <com.yuedong.plugin.ui.view.TextViewCanSelect
+    <com.yuedong.plugin.beauty.ui.view.TextViewCanSelect
         android:id="@+id/type1_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

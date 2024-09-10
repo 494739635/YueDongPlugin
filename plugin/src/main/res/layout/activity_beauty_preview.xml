@@ -5,9 +5,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#6B6B6B"
-    tools:context="com.yuedong.plugin.BeautyPreviewActivity">
+    tools:context="com.yuedong.plugin.beauty.BeautyPreviewActivity">
 
-    <com.yuedong.plugin.ui.view.AspectFrameLayout
+    <com.yuedong.plugin.beauty.ui.view.AspectFrameLayout
         android:id="@+id/surfaceLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -17,7 +17,7 @@
             android:id="@+id/surfaceView"
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
-    </com.yuedong.plugin.ui.view.AspectFrameLayout>
+    </com.yuedong.plugin.beauty.ui.view.AspectFrameLayout>
 
     <ImageView
         android:id="@+id/cameraSwitch"

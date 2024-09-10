@@ -1,4 +1,68 @@
 <resources>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <string name="app_main_mlvb_title">腾讯云MLVB API Example</string>
+    <string name="app_basic_function">基础功能</string>
+    <string name="app_camera_push">摄像头推流</string>
+    <string name="app_camera_push_desc">包含rtmp推流，rtc推流</string>
+    <string name="app_screen_push">录屏推流</string>
+    <string name="app_live_play">直播拉流</string>
+    <string name="app_live_play_desc">包含标准协议rtmp,flv,hls拉流和rtc拉流功能</string>
+    <string name="app_leb_play">快直播拉流</string>
+    <string name="app_live_link">连麦互动</string>
+    <string name="app_live_pk">PK互动</string>
+    <string name="app_advanced_function">进阶功能</string>
+    <string name="app_switch_render_view">动态切换渲染组件</string>
+    <string name="app_custom_video_capture">自定义视频采集</string>
+    <string name="app_third_beauty">第三方美颜</string>
+    <string name="app_rtc_push_and_play">RTC连麦+超低延时播放</string>
+    <string name="app_picture_in_picture">画中画功能</string>
+    <string name="app_webrtc_auto_play">快直播自适应播放</string>
+    <string name="app_hls_auto_play">HLS自适应播放</string>
+    <string name="app_time_shift">直播时移</string>
+    <string name="common_please_input_roomid_and_userid">用户没有允许需要的权限，加入通话失败</string>
+
+    <string name="liveplay_mute">静音</string>
+    <string name="liveplay_mlvb_live_play">MLVB 直播拉流</string>
+    <string name="liveplay_please_input_streamid">请输入streamId</string>
+    <string name="liveplay_live_play_desc">RTC拉流为腾讯云自研实时音视频协议，超低延迟、抗弱网能力强，全球覆盖适用于电商秒杀，体育赛事等多个场景，更多细节详见：https://cloud.tencent.com/document/product/454/56598 目前仅仅中国大陆支持，其他地区正持续开发中。\n\n标准直播拉流支持FLV、RTMP、HLS等多种格式，成熟度高，并 发量强，但是延迟高</string>
+    <string name="liveplay_rtc_play">RTC拉流</string>
+    <string name="liveplay_rtmp_play">RTMP拉流</string>
+    <string name="liveplay_webrtc_play">快直播拉流(推荐)</string>
+    <string name="liveplay_cancel_mute">取消静音</string>
+    <string name="liveplay_flv_play">FLV拉流</string>
+    <string name="liveplay_hls_play">HLS拉流</string>
+
+    <string name="lebplay_mute">静音</string>
+    <string name="lebplay_cancel_mute">取消静音</string>
+    <string name="lebplay_mlvb_live_play">MLVB 快直播拉流</string>
+    <string name="lebplay_please_input_streamid">请输入streamId</string>
+    <string name="lebplay_live_play_desc">快直播（Live Event Broadcasting,LEB）是标准直播在超低延迟播放场景下的延伸，强烈推荐，秒开效果最好，支持超高并发。</string>
+    <string name="lebplay_webrtc_play">快直播拉流</string>
+    <string name="lebplay_desc_recommend">腾讯云官方推荐使用快直播拉流方式</string>
+
+
+    <string name="livepushcamera_please_ensure_pushing">请确保正在推流中</string>
+    <string name="livepushcamera_front_camera_open">前摄开启</string>
+    <string name="livepushcamera_camera_all_open">前后摄均开启</string>
+    <string name="livepushcamera_camera_all_close">前后摄均关闭</string>
+    <string name="livepushcamera_close_mic">关闭麦克风</string>
+    <string name="livepushcamera_open_mic">打开麦克风</string>
+    <string name="livepushcamera_please_input_streamid">请输入streamId</string>
+    <string name="livepushcamera_mlvb_camera_push">MLVB 摄像头推流</string>
+    <string name="livepushcamera_audio_setting">音频设置</string>
+    <string name="livepushcamera_video_setting">视频设置</string>
+    <string name="livepushcamera_resolution">分辨率</string>
+    <string name="livepushcamera_local_preview_rotate">本地预览旋转角度</string>
+    <string name="livepushcamera_local_preview_mirror">本地预览镜像</string>
+    <string name="mlvb">MLVB 摄像头推流</string>
+    <string name="livepushcamera_push_desc">RTC推流为腾讯云自研实时音视频协议，相比传统的直播协议，具备如下优势：超低延迟、弱网超强抗性、支持全球范围，更多细节详见：https://cloud.tencent.com/document/product/454/56592 目前仅中国大陆支持，其他地区正持续开发中。</string>
+    <string name="livepushcamera_please_select_audio_quality">请选择音频质量</string>
+    <string name="livepushcamera_default">默认</string>
+    <string name="livepushcamera_voice">语音</string>
+    <string name="livepushcamera_music">音乐</string>
+    <string name="livepushcamera_rtmp_push">标准直播推流</string>
+    <string name="livepushcamera_rtc_push">RTC推流(推荐)</string>
 </resources>
