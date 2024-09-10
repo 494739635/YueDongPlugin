@@ -4,7 +4,7 @@ import android.content.Context
 import android.widget.Toast
 import com.yuedong.plugin.ui.BeautyApiUI
 
-object YPluginManager {
+object PluginManager {
 
     fun initBeauty(context: Context) {
         Toast.makeText(context, "开始初始化美颜", Toast.LENGTH_LONG).show()
@@ -17,8 +17,8 @@ object YPluginManager {
         }
     }
 
-    fun showToastTest(context: Context) {
-        Toast.makeText(context, "Hello UNI", Toast.LENGTH_LONG).show()
+    fun showToastForAndroid(context: Context) {
+        Toast.makeText(context, "Hello UNI，来自Android的Toast", Toast.LENGTH_LONG).show()
     }
 
 }
