@@ -4,12 +4,12 @@ plugins {
 }
 
 android {
-    compileSdk 31
+    compileSdk 33
 
     defaultConfig {
         applicationId "com.live.ss"
         minSdk 21
-        targetSdk 31
+        targetSdk 33
         versionCode 1
         versionName "1.0"
     }
@@ -48,5 +48,5 @@ dependencies {
     implementation 'androidx.appcompat:appcompat:1.0.0'
     implementation 'com.google.android.material:material:1.4.0'
     implementation project(":plugin")
-//    implementation 'com.github.494739635:YueDongPlugin:0.1.35'
+//    implementation 'com.github.494739635:YueDongPlugin:0.1.36'
 }
