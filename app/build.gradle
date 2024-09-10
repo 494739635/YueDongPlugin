@@ -5,7 +5,7 @@ plugins {
 
 android {
     compileSdk 33
-
+    namespace "com.live.ss"
     defaultConfig {
         applicationId "com.live.ss"
         minSdk 21
